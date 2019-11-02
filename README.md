@@ -22,16 +22,10 @@ It is a desktop software for the management of a dental office. In principle, it
 We will present in the following interafaces some features of my application that uses French as a display language because the target audience in Algeria is French:
 
 ![](Images/1.png)
-
 ![](Images/2.png)
-
 ![](Images/3.png)
-
 ![](Images/4.png)
- 
 ![](Images/5.png)
-
 ![](Images/6.png)
-
 ![](Images/7.png)
  
