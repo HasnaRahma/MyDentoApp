@@ -33,16 +33,14 @@ MyDentoApp is a Dental Practice Management desktop Software.In principle, it aut
 We will present in the following interafaces some features of my application that uses French as a display language because the target audience in Algeria is French:
 
 ![](Images/1.png)
----------------
-![](Images/2.png)
----------------
-![](Images/3.png)
----------------
-![](Images/4.png)
----------------
-![](Images/5.png)
----------------
-![](Images/6.png)
----------------
+![](Images/2.PNG)
+![](Images/3.PNG)
+![](Images/4.PNG)
+![](Images/5.PNG)
+![](Images/6.PNG)
 ![](Images/7.png)
+![](Images/8.PNG)
+![](Images/9.PNG)
+![](Images/10.PNG)
+![](Images/11.PNG)
  
