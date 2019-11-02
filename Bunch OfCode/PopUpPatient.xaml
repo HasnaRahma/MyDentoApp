@@ -1,0 +1,82 @@
+﻿<Window x:Class="GestionCabinetDentaire.PopUpPatient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionCabinetDentaire"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Height="434" Width="850" Background="#FFF0F0F0" ResizeMode="NoResize" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="360 " />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Border
+                        Grid.Row="0" BorderBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" BorderThickness="2,0" Margin="34,0,30,0">
+
+            <StackPanel
+                       Height="300" Canvas.Left="63" Canvas.Top="69" Width="708" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Margin="10,30">
+
+                <StackPanel Width="346.5">
+                    <StackPanel Orientation="Horizontal" Height="35">
+                        <TextBlock Text="Nom :" Width="78.23" Height="18" FontSize="14.667"></TextBlock>
+                        <TextBox x:Name="PatNom" Width="177" Height="25"/>
+
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="35"></StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="35">
+                        <TextBlock  Text="Prénom :" Width="77.873" FontSize="14.667"></TextBlock>
+                        <TextBox x:Name="PatPre" Width="176" Margin="0,0,0,10"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Height="35">
+                        <TextBlock Text="Date de Naissance :" Width="131.23" Height="18" FontSize="14.667" Margin="0,8.5"></TextBlock>
+                        <DatePicker  x:Name="PatDatNai"  Width="122.5" Height="25" Margin="0,5" />
+                       
+                      
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="35">
+                        <TextBlock Text="Adresse :" Width="78.23" Height="18" FontSize="14.667"></TextBlock>
+                        <TextBox x:Name="PatAdr" Width="177" Height="25"/>
+
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="35">
+                        <TextBlock Text="Tél :" Width="78.23" Height="18" FontSize="14.667"></TextBlock>
+                        <TextBox x:Name="PatTel" Width="177" Height="25"/>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Width="347.5">
+                    <StackPanel Orientation="Horizontal" Height="35">
+                        <TextBlock  Text="Date d'enregistrement :" Width="161.373" FontSize="14.667"></TextBlock>
+                        <TextBox IsEnabled="False" x:Name="PatDatEnr" Width="182" Margin="0,0,0,10"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="35"></StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="35">
+                        <TextBlock x:Name="Sexe" Text="Sexe :" Width="60.987" FontSize="14.667"></TextBlock>
+                        <TextBlock x:Name="PatSex" Text="Femme" Width="59.087" FontSize="14.667"></TextBlock>
+                        <RadioButton x:Name="Femme" Margin="0,5.5,0,15.5" d:LayoutOverrides="Height" Width="19"/>
+                        <TextBlock Text="Homme" Width="63.833" FontSize="14.667"></TextBlock>
+
+                        <RadioButton  x:Name="Homme" Width="14.642" Margin="0,5.5,0,14.5" d:LayoutOverrides="Height" />
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Height="35">
+                        <TextBlock  Text="Profession :" Width="160.373" FontSize="14.667"></TextBlock>
+                        <TextBox x:Name="PatPro" Width="182" Margin="0,0,0,10"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="141">
+                        <TextBlock  Text="Autres :" Width="64.373" FontSize="14.667"></TextBlock>
+                        <TextBox x:Name="PatDes" Width="271" Margin="0,0,0,10"/>
+                    </StackPanel>
+                </StackPanel>
+
+
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="1" BorderBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" BorderThickness="0,2"  >
+            <Button Grid.Row="1" Click="Valider_Click" x:Name="Valider" Content="Valider" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0" Width="94.01" Height="21.649"></Button>
+        </Border>
+
+    </Grid>
+</Window>

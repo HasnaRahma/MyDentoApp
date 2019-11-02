@@ -1,0 +1,42 @@
+﻿<Window x:Class="GestionCabinetDentaire.PopUps.PopUpControle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionCabinetDentaire.PopUps"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Height="356" Width="782" Background="#FFF0F0F0" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="92*"></RowDefinition>
+            <RowDefinition Height="17*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="20" Grid.Row="0" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock  Text="Date d'enregistrement :" Width="161.373" FontSize="14.667"  ></TextBlock>
+                <TextBox IsEnabled="False" x:Name="CoDatEnr" Width="180" Margin="0,0,0,10" Height="24" VerticalAlignment="Center"/>
+                <Label Width="10" Height="30"></Label>
+                <TextBlock  Text="Médecin :" Width="77.873" FontSize="14.667" HorizontalAlignment="Left"/>
+                <ComboBox x:Name="CoMedecin" Width="172" ></ComboBox>
+
+            </StackPanel>
+            <Label></Label>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock  Text="Versement :" Width="161.373" FontSize="14.667"  ></TextBlock>
+                <TextBox x:Name="CoVersement" Width="176" Margin="0,0,0,10" Height="24" VerticalAlignment="Center"/>
+                <Label Width="10" Height="30"></Label>
+                <TextBlock  Text="Traiement :" Width="77.873" FontSize="14.667" HorizontalAlignment="Left"/>
+
+                <TextBox x:Name="CoTraitement" Width="176" Margin="0,0,0,10" Height="24" VerticalAlignment="Center"/>
+            </StackPanel>
+            <Label Height="30"></Label>
+            <StackPanel Orientation="Horizontal" Height="24">
+                <TextBlock Text="Description : " FontSize="14.667" Width="161.373" ></TextBlock>
+                <TextBox x:Name="CoDescription" Width="560" Margin="0,-5,0,-113" Height="142" VerticalAlignment="Center"/>
+            </StackPanel>
+
+        </StackPanel>
+        <Button Grid.Row="1" Click="Valider_Click" x:Name="Valider" Content="Valider" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Width="94.01" Height="21.649"></Button>
+    </Grid>
+</Window>
