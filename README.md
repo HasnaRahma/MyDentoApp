@@ -29,5 +29,9 @@ We will present in the following interafaces some features of my application tha
 
 ![](Images/4.png)
  
- 
+![](Images/5.png)
+
+![](Images/6.png)
+
+![](Images/7.png)
  
