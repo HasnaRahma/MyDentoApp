@@ -40,6 +40,7 @@ We will present in the following interafaces some features of my application tha
 ![](Images/6.PNG)
 ![](Images/7.png)
 ![](Images/8.PNG)
+
 ![](Images/9.PNG)
 ![](Images/10.PNG)
 ![](Images/11.PNG)
